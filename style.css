@@ -1,0 +1,92 @@
+/* Font */
+body {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700; /* Bold */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('forweb_image.jpg') center fixed;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* Container */
+.container {
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  background: rgba(255,255,255,0.8);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.btn-start {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: rgb(190, 103, 118);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-start:hover {
+  background-color: hotpink;
+  color: white;
+}
+
+/* Animasi Karakter */
+.animation-area {
+  margin-top: 60px;
+  position: relative;
+  height: 300px;
+}
+
+#character {
+  width: 180px;
+  opacity: 0;
+  transition: all 2s ease;
+  position: relative;
+}
+
+#character.show {
+  opacity: 1;
+  transform: translateY(-30px);
+}
+
+#character.hide {
+  transform: translateX(-300px);
+  opacity: 0;
+}
+
+/* Teks romantis */
+#romanticText {
+  white-space: pre-wrap; /* agar spasi dan enter tetap ditampilkan */
+  font-size: 2.0rem;
+  color: #000000;
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+
+/* Spacer supaya bisa scroll */
+.spacer {
+  height: 1000px;
+}
